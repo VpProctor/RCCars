@@ -1,10 +1,10 @@
 package com.rccars.model.base;
 
-import com.rc.cars.model.impl.forSale;
+import com.rccars.model.impl.forSale;
 
 import java.math.BigDecimal;
 
-public class Accessory implements forSale{
+public class Accessory implements forSale {
 
     private final BigDecimal price;
     private final String name;

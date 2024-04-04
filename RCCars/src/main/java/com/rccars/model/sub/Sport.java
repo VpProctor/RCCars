@@ -1,34 +1,35 @@
 package com.rccars.model.sub;
 
-import com.rccars.model.base.AbstractStreet;
+import com.rccars.model.base.AbstractStreetCar;
 
-import java.awt.*;
 import java.math.BigDecimal;
 
-public class Sport extends AbstractStreet {
-    super (Frame.GREEN);
+public class Sport extends AbstractStreetCar {
 
-    public Sport() {
-        super(Frame.);
-    }
 
     @Override
     public BigDecimal getSaleValue(){
         return BigDecimal.valueOf(150.00);
     }
+
     @Override
-    public String getPrefix(){
-        return "Sport"
+    public String getUPC(){
+        return "MB605";
     }
 
     @Override
-    public int getStartNumber() {
-         return 9753;
+    public String getMotorNumber() {
+        return "SPT2019";
+    }
+
+    @Override
+    public int getStartingNumber() {
+         return 258456;
     }
 
     @Override
     public String toString() {
-        return "Street Sport Remote Control Car";
+        return "Sport Street Car";
     }
 
 }// End Class
